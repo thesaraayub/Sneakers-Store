@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div>
+                <div class="navshoe">.SNEAKERS</div>
+            </div>
+                  <div class="navItem">
+                           <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
+                </div>           
+             </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+         </div>   
+               <div class="navBottom">
+            <h3 class="menuItem">AIR FORCE</h3>
+            <h3 class="menuItem">JORDAN</h3>
+            <h3 class="menuItem">BLAZER</h3>
+            <h3 class="menuItem">CRATER</h3>
+            <h3 class="menuItem">HIPPIE</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="img/air (1).png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$119</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/jordan.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">JORDAN</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$149</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/blazer.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$109</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/crater.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$129</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="./img/hippie.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">$99</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="./img/shipping.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="img/return.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/gift.png" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="./img/contact.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="img/air2.png" alt="" class="productImg">
+        
+        <div class="productDetails">
+             <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">$199</h2>
+            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
+                dolorum
+                doloremque sapiente aliquid aperiam.</p>
+            <div class="colors">
+                <div class="color"></div> 
+                <br>              
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>
+            </div>
+            
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name and Surname</label>
+            <input type="text" placeholder="full name" class="payInput">
+                <label>Choose Country:</label>
+                <select id="country" name="country" onchange="updateCode()" class="payInput">
+                    <option value="AF" data-code="+93">Afghanistan(+93)</option>
+                    <option value="AL" data-code="+355">Albania (+355)</option>
+                    <option value="DZ" data-code="+213">Algeria (+213)</option>
+                    <option value="AS" data-code="+1-684">American Samoa (+1-684)</option>
+                    <option value="AM " data-code="+374">Armenia (+374)</option>
+                    <option value="AU" data-code="+61">Australia9(+61)</option>
+                    <option value="BD" data-code="+880">Bangladesh(+880)</option>
+                    <option value="BH" data-code="+973">Bahrain(+973)</option>
+                    <option value="BE" data-code="+32">Belgium(+32)</option>
+                    <option value="BJ" data-code="+229">Benin(+229)</option>
+                    <option value="BIH" data-code="+387">Bosnia and Herzegovina(+387)</option>
+                    <option value="KH" data-code="+855">Cambodia(+855)</option>
+                    <option value="CM" data-code="+237">Cameroon(+237)</option>
+                    <option value="CA" data-code="+1">Canada(+1)</option>
+                    <option value="CN" data-code="+86">China(+86)</option>
+                    <option value="CX" data-code="+61">Christmas Island(+61)</option>
+                    <option value="DK" data-code="+45">Denmark(+45)</option>
+                    <option value="DJ " data-code="+253">Djibouti(+253)</option>
+                    <option value="DMA" data-code="+1-767"> Dominica(+1-767)</option>
+                    <option value="TL" data-code="+670">East Timor(+670)</option>
+                    <option value="EC" data-code="+593"> Ecuador(+593)</option>
+                    <option value="EG" data-code="+20">Egypt(+20)</option>
+                    <option value="HK" data-code="+852">Hong Kong(+852)</option>
+                    <option value="IR" data-code="+98"> Iran(+98)</option>
+                    <option value="IQ " data-code="+964"> Iraq(+964)</option>
+                    <option value="IE" data-code="+353"> Ireland(+353)</option>
+                    <option value="IM" data-code="+44-1624"> Isle of Man(+44-1624)</option>
+                    <option value="IL" data-code="+972"> Israel(+972)</option>
+                    <option value="JM" data-code="+1-876"> Jamaica(+1-876)</option>
+                    <option value="JP" data-code="+81">Japan(+81)</option>
+                    <option value="JE" data-code="+44-1534"> Jersey(+44-1534)</option>
+                    <option value="KZ" data-code="+7"> Kazakhstan(+7)</option>
+                    <option value="MO" data-code="+853"> Macau(+853)</option>
+                    <option value="OM" data-code="+968">Oman(+968)</option>
+                    <option value="PK" data-code="+92"> Pakistan(+92)</option>
+                    <option value="PW" data-code="+680">Palau (+680)</option>
+                    <option value="PS" data-code="+">Palestine (+970)</option>
+                    <option value="UZB" data-code="+998"> Uzbekistan(+998)</option>
+                    <option value="VA" data-code="+	379"> Vatican(+379)</option>
+                    <option value="WF" data-code="+681">Wallis and Futuna (+681)</option>
+                    <option value="YE" data-code="+967">Yemen(+967)</option>
+                    <option value="ZM " data-code="+260"> Zambia(+260)</option>
+                    <option value="ZW" data-code="+263"> Zimbabwe(+263)</option>
+                   </select>
+                <label >Phone Number:</label>
+                <input type="text"  id="code"  placeholder="Enter your phone number" class="payInput">
+                    
+            <label>Address</label>
+            <input type="text" placeholder="Enter your Address " class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
+                <img src="./img/master.png" alt="" width="40" class="cardIcon">
+                <img src="img/easypasia.png" alt="" width="60" class="cardIcon">
+                <img src="img/jazz cash .png" alt="" width="60" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="./img/facebook.png" alt="" class="fIcon">
+                    <img src="./img/twitter.png" alt="" class="fIcon">
+                    <img src="./img/instagram.png" alt="" class="fIcon">
+                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Lama Dev. All rights reserved. 2025.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+    <script>
+        function updateCode() {
+            const select = document.getElementById("country");
+            const code = select.options[select.selectedIndex].getAttribute("data-code");
+            document.getElementById("code").value = code;
+        }
+    </script>             
+
+</body>
+</html>
